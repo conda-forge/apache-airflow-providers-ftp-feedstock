@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-ftp" %}
-{% set version = "2.1.0" %}
+{% set version = "2.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-ftp-{{ version }}.tar.gz
-  sha256: e2d27b395b20f7c9b277f1308241884790e6c230cba73759cfb1c7e5cdcea27a
+  sha256: 1810660a16ed84d3fa72671b1764572e95a8f64ded3e115e8856cbd010ed0c5d
 
 build:
   number: 0
