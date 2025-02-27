@@ -1,13 +1,13 @@
 {% set name = "apache-airflow-providers-ftp" %}
-{% set version = "3.12.0" %}
+{% set version = "3.12.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 91430e2d1c0f323b361e2c6b08de649103ee10e6c8977dde3fd5cc42db84c505
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_ftp-{{ version }}.tar.gz
+  sha256: 417bcf35bc8421d1c9bb33f51e81111a8981622f1a9b74be7e5ff8e7c69f1666
 
 build:
   noarch: python
@@ -36,7 +36,7 @@ about:
   home: https://github.com/apache/airflow/
   summary: Provider package apache-airflow-providers-ftp for Apache Airflow
   license: Apache-2.0
-  license_file: airflow/providers/ftp/LICENSE
+  license_file: src/airflow/providers/ftp/LICENSE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-ftp/stable/index.html
   dev_url: https://github.com/apache/airflow/
