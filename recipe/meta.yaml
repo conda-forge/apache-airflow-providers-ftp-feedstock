@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-ftp" %}
-{% set version = "3.13.2" %}
+{% set version = "3.13.3" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_ftp-{{ version }}.tar.gz
-  sha256: 2574f041b42a6c6952142392f4540434a6c7ec6ee3760fd5b6b5990e0aac4709
+  sha256: c6da470a73f2e20ded4499f8877dd7c013273ec861f04d67723046cbc1d59dee
 
 build:
   noarch: python
@@ -21,6 +21,7 @@ requirements:
     - flit-core ==3.12.0
     - pip
   run:
+    - apache-airflow-providers-common-compat >=1.8.0
     - python >={{ python_min }}
     - apache-airflow >=2.10.0
 
