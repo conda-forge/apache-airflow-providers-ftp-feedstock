@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-ftp
-  version: "3.15.2"
+  version: "3.16.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_ftp-${{ version }}.tar.gz
-  sha256: 0355ea366f3bc1fee0c5d48d6d2c6a65555863659bbd998e3ddeafcb88461526
+  sha256: 470c9f006ecf36b9a3a8a88245b441150eeb1e7850ea85735e597953a98e0fec
 
 build:
   noarch: python
