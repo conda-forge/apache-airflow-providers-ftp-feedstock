@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-ftp
-  version: "3.16.0"
+  version: "3.16.1"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_ftp-${{ version }}.tar.gz
-  sha256: 470c9f006ecf36b9a3a8a88245b441150eeb1e7850ea85735e597953a98e0fec
+  sha256: f359de112eb95d587c9375f0c44c107e8ee08470d3904be8f49136b2660be1f1
 
 build:
   noarch: python
@@ -19,7 +19,7 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - flit-core ==4.0.2
+    - flit-core ==4.1.0
   run:
     - python >=${{ python_min }}
     - apache-airflow >=2.11.0
